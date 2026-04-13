@@ -1,0 +1,39 @@
+# Keil/ARM вывод компиляции
+*.axf
+*.crf
+*.d
+*.dep
+*.o
+*.htm
+*.lnp
+*.lst
+*.map
+*.rel
+*.scr
+*.sct
+*.sim
+*.mxproject
+*.i
+*.iex
+
+# Папки сборки Keil
+Listings/
+Objects/
+Debug/
+Release/
+
+# Файлы пользовательских настроек Keil
+*.uvoptx
+*.uvgui.*
+*.uvguix.*
+
+# Временные файлы
+*.bak
+*.tmp
+*.backup
+*.swp
+*.log
+
+# Системные файлы
+.DS_Store
+Thumbs.db
