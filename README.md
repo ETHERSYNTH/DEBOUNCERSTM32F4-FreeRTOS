@@ -1,11 +1,17 @@
 stm32f4-discovery-keil-freertos-blink
-============================
+====================================
 
-Project on Keil (MDK-ARM) for stm32f4-discovery + FreeRTOS 7.5.2, blink led
-Add Low Power mode
+Sysclk 168 MHz
 
-For reload .bin to STM32 need when low power mode is On:
-1. type reset on stm32f4-discovery
-2. press download to chip on Keil
-3. wait ~3sec
-4. release reset
+Project on Keil (MDK-ARM) for stm32f4-discovery + FreeRTOS 7.5.2
+
+Led blinks one by one, clockwise. BLUE -> RED -> ORANG -> GREEN
+
+There are tasks for each color LED control + push button control task with debounce filter via timer callback. 
+
+Emulation of push button "B1"(PA0 input, external) to connect with PA3 output.
+
+#define BUTTON_DEBOUNCE_MS    1
+
+After GREEN led off activate push button to measuring responce time.
+By  BUTTON_PRESSED event happend increment/decrement leding time.
