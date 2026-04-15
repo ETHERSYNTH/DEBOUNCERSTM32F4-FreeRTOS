@@ -1,3 +1,5 @@
+Details in FreeRTOS_STM32F4DISCO_RESPONCE.pdf
+
 stm32f4-discovery-keil-freertos-blink
 ====================================
 
